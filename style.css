@@ -155,7 +155,22 @@ main {
     color: #888;
     margin-top: 2rem;
 }
-
+.article-main pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-size: 1.05rem;
+    color: #444;
+    background: none;
+    border: none;
+    margin-bottom: 1rem;
+    max-width: 100%;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+.side-article:hover .side-article-title {
+    color: var(--accent);
+    text-decoration: underline;
+    transition: color 0.2s;
+}
 /* Pie de página principal */
 footer {
     background: var(--footer-bg);
