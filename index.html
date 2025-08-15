@@ -1,74 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Viajes por El Salvador</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      Viajes por El Salvador<br />
-      <span style="font-size: 1.1rem; font-weight: 400"
-        >Descubre los destinos más increíbles</span
-      >
-    </header>
-    <main>
-      <!-- Lista de articulos -->
-      <section class="articles-list" id="articles-list">
-        <div class="article-card" onclick="showArticle(1)">
-          <img src="IMG/elTuncoImg4k.jpg" alt="El Tunco" class="article-img" />
-          <div class="article-title">El Tunco: Surf y Relax</div>
-          <div class="article-desc">
-            Playas famosas por el surf, ambiente relajado y atardeceres
-            espectaculares.
-          </div>
-        </div>
-        <div class="article-card" onclick="showArticle(2)">
-          <img
-            src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80"
-            alt="Suchitoto"
-            class="article-img"
-          />
-          <div class="article-title">Suchitoto: Encanto Colonial</div>
-          <div class="article-desc">
-            Calles empedradas, arte, cultura y vistas al lago Suchitlán.
-          </div>
-        </div>
-        <div class="article-card" onclick="showArticle(3)">
-          <img
-            src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=600&q=80"
-            alt="Ruta de las Flores"
-            class="article-img"
-          />
-          <div class="article-title">
-            Ruta de las Flores: Naturaleza y Tradición
-          </div>
-          <div class="article-desc">
-            Pueblos pintorescos, gastronomía típica y paisajes llenos de color.
-          </div>
-        </div>
-      </section>
 
-      <!-- Articulo 1 -->
-      <section class="article-view" id="article-view-1">
-        <div
-          class="article-header-bg"
-          style="background-image: url('img/elTuncoImg4k.jpg')"
-        ></div>
-        <div class="article-content-row">
-          <div class="article-main">
-            <h2>El Tunco: Surf y Relax</h2>
-            <img
-              src="img/el-tunco.avif"
-              class="article-main-img"
-              alt="El Tunco"
-            />
-            <pre>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Viajes por El Salvador</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    Viajes por El Salvador<br />
+    <span style="font-size: 1.1rem; font-weight: 400">Descubre los destinos más increíbles</span>
+  </header>
+  <main>
+    <!-- Lista de articulos -->
+    <section class="articles-list" id="articles-list">
+      <div class="article-card" onclick="showArticle(1)">
+        <img src="IMG/elTuncoImg4k.jpg" alt="El Tunco" class="article-img" />
+        <div class="article-title">El Tunco: Surf y Relax</div>
+        <div class="article-desc">
+          Playas famosas por el surf, ambiente relajado y atardeceres
+          espectaculares.
+        </div>
+      </div>
+      <div class="article-card" onclick="showArticle(2)">
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80"
+          alt="Suchitoto" class="article-img" />
+        <div class="article-title">Suchitoto: Encanto Colonial</div>
+        <div class="article-desc">
+          Calles empedradas, arte, cultura y vistas al lago Suchitlán.
+        </div>
+      </div>
+      <div class="article-card" onclick="showArticle(3)">
+        <img src="IMG/ruta-de-las-flores-inicio.jpg"
+          alt="Ruta de las Flores" class="article-img" />
+        <div class="article-title">
+          Ruta de las Flores: Naturaleza y Tradición
+        </div>
+        <div class="article-desc">
+          Pueblos pintorescos, gastronomía típica y paisajes llenos de color.
+        </div>
+      </div>
+    </section>
+
+    <!-- Articulo 1 -->
+    <section class="article-view" id="article-view-1">
+      <div class="article-header-bg" style="background-image: url('img/elTuncoImg4k.jpg')"></div>
+      <div class="article-content-row">
+        <div class="article-main">
+          <h2>El Tunco: Surf y Relax</h2>
+          <img src="img/el-tunco.avif" class="article-main-img" alt="El Tunco" />
+          <pre>
 Playa El Tunco, El Salvador: Un Paraíso Surfista y Bohemio
 📍 Ubicación: A solo 7 km de La Libertad, en la costa de El Salvador.
 
@@ -84,179 +68,161 @@ Playa El Tunco, El Salvador: Un Paraíso Surfista y Bohemio
 🛣️ ¿Cómo llegar?
 Desde San Salvador, toma la carretera al Puerto de La Libertad, luego el bypass Surf City y sigue hasta el Km 43.
 
-✨ El Tunco es más que una playa: es una experiencia única de surf, fiesta y relax. 🏄‍♂️🌴🍹</pre
-            >
+✨ El Tunco es más que una playa: es una experiencia única de surf, fiesta y relax. 🏄‍♂️🌴🍹</pre>
+        </div>
+        <div class="article-side">
+          <button class="back-btn" onclick="goHome()">Ir a inicio</button>
+          <div class="side-article" onclick="showArticle(2)" style="cursor: pointer">
+            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80"
+              class="side-img" alt="Suchitoto" />
+            <p class="side-article-title">Suchitoto: Encanto Colonial</p>
           </div>
-          <div class="article-side">
-            <button class="back-btn" onclick="goHome()">Ir a inicio</button>
-            <div
-              class="side-article"
-              onclick="showArticle(2)"
-              style="cursor: pointer"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80"
-                class="side-img"
-                alt="Suchitoto"
-              />
-              <p class="side-article-title">Suchitoto: Encanto Colonial</p>
-            </div>
-            <div
-              class="side-article"
-              onclick="showArticle(2)"
-              style="cursor: pointer"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=600&q=80"
-                class="side-img"
-                alt="Ruta de las Flores"
-              />
-              <p class="side-article-title">
-                Ruta de las Flores: Naturaleza y Tradición
-              </p>
-            </div>
-            <div class="side-footer">
-              <p>
-                © 2024 Viajes por El Salvador. Todos los derechos reservados.
-              </p>
-            </div>
+          <div class="side-article" onclick="showArticle(3)" style="cursor: pointer">
+            <img src="IMG/ruta-de-las-flores-inicio.jpg"
+              class="side-img" alt="Ruta de las Flores" />
+            <p class="side-article-title">
+              Ruta de las Flores: Naturaleza y Tradición
+            </p>
+          </div>
+          <div class="side-footer">
+            <p>
+              © 2024 Viajes por El Salvador. Todos los derechos reservados.
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Articulo 2 -->
-      <section class="article-view" id="article-view-2">
-        <div
-          class="article-header-bg"
-          style="
+    <!-- Articulo 2 -->
+    <section class="article-view" id="article-view-2">
+      <div class="article-header-bg" style="
             background-image: url('https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1200&q=80');
-          "
-        ></div>
-        <div class="article-content-row">
-          <div class="article-main">
-            <h2>Suchitoto: Encanto Colonial</h2>
-            <img
-              src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80"
-              class="article-main-img"
-              alt="Suchitoto"
-            />
+          "></div>
+      <div class="article-content-row">
+        <div class="article-main">
+          <h2>Suchitoto: Encanto Colonial</h2>
+          <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80"
+            class="article-main-img" alt="Suchitoto" />
+          <p>
+            Suchitoto es un pueblo colonial lleno de historia, arte y cultura.
+            Sus calles empedradas y su iglesia blanca son el escenario
+            perfecto para disfrutar de festivales y vistas al lago Suchitlán.
+          </p>
+        </div>
+        <div class="article-side">
+          <button class="back-btn" onclick="goHome()">Ir a inicio</button>
+          <div class="side-article">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+              class="side-img" alt="El Tunco" />
+            <p>El Tunco: Surf y Relax</p>
+          </div>
+          <div class="side-article">
+            <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=600&q=80"
+              class="side-img" alt="Ruta de las Flores" />
+            <p>Ruta de las Flores: Naturaleza y Tradición</p>
+          </div>
+          <div class="side-footer">
             <p>
-              Suchitoto es un pueblo colonial lleno de historia, arte y cultura.
-              Sus calles empedradas y su iglesia blanca son el escenario
-              perfecto para disfrutar de festivales y vistas al lago Suchitlán.
+              © 2024 Viajes por El Salvador. Todos los derechos reservados.
             </p>
           </div>
-          <div class="article-side">
-            <button class="back-btn" onclick="goHome()">Ir a inicio</button>
-            <div class="side-article">
-              <img
-                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
-                class="side-img"
-                alt="El Tunco"
-              />
-              <p>El Tunco: Surf y Relax</p>
-            </div>
-            <div class="side-article">
-              <img
-                src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=600&q=80"
-                class="side-img"
-                alt="Ruta de las Flores"
-              />
-              <p>Ruta de las Flores: Naturaleza y Tradición</p>
-            </div>
-            <div class="side-footer">
-              <p>
-                © 2024 Viajes por El Salvador. Todos los derechos reservados.
-              </p>
-            </div>
-          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Articulo 3 -->
-      <section class="article-view" id="article-view-3">
-        <div
-          class="article-header-bg"
-          style="
-            background-image: url('https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=1200&q=80');
-          "
-        ></div>
-        <div class="article-content-row">
-          <div class="article-main">
-            <h2>Ruta de las Flores: Naturaleza y Tradición</h2>
-            <img
-              src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=600&q=80"
-              class="article-main-img"
-              alt="Ruta de las Flores"
-            />
-            <p>
-              La Ruta de las Flores recorre pueblos como Juayúa, Apaneca y
-              Ataco, famosos por sus murales, mercados gastronómicos y paisajes
-              llenos de flores y café. Ideal para explorar la cultura y
-              naturaleza de El Salvador.
-            </p>
+    <!-- INICIO Articulo 3 -->
+    <section class="article-view" id="article-view-3">
+      <div class="article-header-bg" style="background-image: url('IMG/ruta-flores-hero.jpg')"></div>
+
+      <div class="article-content-row">
+        <!-- Columna principal -->
+        <div class="article-main">
+          <h2>Ruta de las Flores: Naturaleza y Tradición</h2>
+
+          <img src="IMG/ruta-de-las-flores-el-salvador.jpg" class="article-main-img" alt="Ruta de las Flores" />
+
+          <pre>
+La Ruta de las Flores, en el occidente de El Salvador, reúne pueblos de montaña con clima fresco, cafetales y mucha cultura.
+
+🌸 Pueblos del recorrido
+• Nahuizalco – Mercado nocturno y artesanías.
+• Salcoatitán – Jardines, iglesia y gastronomía típica.
+• Juayúa – Famoso por su festival gastronómico de fin de semana.
+• Apaneca – Cafetales, canopy y lagunas (Verde y Ninfa).
+• Concepción de Ataco – Murales, tejidos y miradores.
+
+🌿 Qué hacer
+• Probar café de fincas locales y platillos típicos.
+• Caminar entre murales y ferias artesanales.
+• Visitar cascadas cercanas y senderos naturales.
+• Disfrutar del clima y miradores al atardecer.
+
+📍 Ubicación
+Departamentos de Sonsonate y Ahuachapán (a ~90 km de San Salvador).
+
+🛣️ Cómo llegar
+Desde la capital, toma la carretera hacia Sonsonate y continúa por Nahuizalco para iniciar el recorrido.
+      </pre>
+        </div>
+
+        <!-- Barra lateral -->
+        <div class="article-side">
+          <button class="back-btn" onclick="goHome()">Ir a inicio</button>
+
+          <div class="side-article" onclick="showArticle(1)" style="cursor:pointer">
+            <img src="IMG/elTuncoImg4k.jpg" class="side-img" alt="El Tunco" />
+            <p class="side-article-title">El Tunco: Surf y Relax</p>
           </div>
-          <div class="article-side">
-            <button class="back-btn" onclick="goHome()">Ir a inicio</button>
-            <div class="side-article">
-              <img
-                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
-                class="side-img"
-                alt="El Tunco"
-              />
-              <p>El Tunco: Surf y Relax</p>
-            </div>
-            <div class="side-article">
-              <img
-                src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80"
-                class="side-img"
-                alt="Suchitoto"
-              />
-              <p>Suchitoto: Encanto Colonial</p>
-            </div>
-            <div class="side-footer">
-              <p>
-                © 2024 Viajes por El Salvador. Todos los derechos reservados.
-              </p>
-            </div>
+
+          <div class="side-article" onclick="showArticle(2)" style="cursor:pointer">
+            <img src="IMG/suchitoto.jpg" class="side-img" alt="Suchitoto" />
+            <p class="side-article-title">Suchitoto: Encanto Colonial</p>
+          </div>
+
+          <div class="side-footer">
+            <p>© 2024 Viajes por El Salvador. Todos los derechos reservados.</p>
           </div>
         </div>
-      </section>
-    </main>
-    <footer>
-      <div>
-        <strong>Contacto:</strong> info@viajessv.com | Tel: +503 2222 3333
       </div>
-      <div class="footer-links">
-        <a href="#">Instagram</a>
-        <a href="#">Facebook</a>
-        <a href="#">Twitter</a>
-        <a href="#">Aviso de privacidad</a>
-      </div>
-      <div>© 2024 Viajes por El Salvador. Todos los derechos reservados.</div>
-    </footer>
-    <script>
-      function showArticle(num) {
-        document.getElementById("articles-list").style.display = "none";
-        for (let i = 1; i <= 3; i++) {
-          document.getElementById("article-view-" + i).style.display = "none";
-        }
-        document.getElementById("article-view-" + num).style.display = "block";
-        window.scrollTo({ top: 0, behavior: "smooth" });
+    </section>
+<!-- FIN Articulo 3 -->
+
+  </main>
+  <footer>
+    <div>
+      <strong>Contacto:</strong> info@viajessv.com | Tel: +503 2222 3333
+    </div>
+    <div class="footer-links">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">Aviso de privacidad</a>
+    </div>
+    <div>© 2024 Viajes por El Salvador. Todos los derechos reservados.</div>
+  </footer>
+  <script>
+    function showArticle(num) {
+      document.getElementById("articles-list").style.display = "none";
+      for (let i = 1; i <= 3; i++) {
+        document.getElementById("article-view-" + i).style.display = "none";
       }
-      function goHome() {
-        for (let i = 1; i <= 3; i++) {
-          document.getElementById("article-view-" + i).style.display = "none";
-        }
-        document.getElementById("articles-list").style.display = "flex";
-        window.scrollTo({ top: 0, behavior: "smooth" });
+      document.getElementById("article-view-" + num).style.display = "block";
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    function goHome() {
+      for (let i = 1; i <= 3; i++) {
+        document.getElementById("article-view-" + i).style.display = "none";
       }
-      // Inicialmente ocultar vistas de articulos
-      window.onload = function () {
-        for (let i = 1; i <= 3; i++) {
-          document.getElementById("article-view-" + i).style.display = "none";
-        }
-      };
-    </script>
-  </body>
+      document.getElementById("articles-list").style.display = "flex";
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    // Inicialmente ocultar vistas de articulos
+    window.onload = function () {
+      for (let i = 1; i <= 3; i++) {
+        document.getElementById("article-view-" + i).style.display = "none";
+      }
+    };
+  </script>
+</body>
+
 </html>
